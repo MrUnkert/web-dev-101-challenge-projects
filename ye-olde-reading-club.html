@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ye Olde Reading Club</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+  <style media="screen">
+    body {
+      background-color: #E9F8F9;
+      font-family: 'Open Sans', serif;
+    }
+
+    p,
+    input {
+      color: #181823;
+      font-weight: 300;
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #537FE7;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .container {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .left {
+      display: inline-block;
+      float: left;
+      width: 45%;
+    }
+
+    .right {
+      display: inline-block;
+      float: right;
+      padding-top: 60px;
+      width: 45%;
+    }
+
+    .right img:first-child {
+      border-radius: 10px;
+    }
+
+    .rounded {
+      border-radius: 100%;
+    }
+
+    .reading-skills {
+      display: inline-block;
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    form {
+      margin-top: 50px;
+    }
+
+    label {
+      margin-top: 0px;
+    }
+
+    input {
+      border-radius: 10px;
+      float: left;
+      margin: 20px;
+      margin-left: 0px;
+      padding: 7px;
+      width: 300px;
+    }
+
+    input[type="radio"] {
+      float: right;
+      margin-top: 15px;
+      width: 200px;
+    }
+
+    input[type="submit"] {
+      display: inline-block;
+      background-color: lightcyan;
+      border-radius: 8px;
+      float: left;
+      margin-left: 0px;
+      margin-right: auto;
+      margin-top: 43px;
+      padding: 10px 30px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: cyan;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .testimonials {
+      margin-top: 126px;
+    }
+
+    .top-up {
+      margin-top: -5px;
+    }
+
+    footer {
+      display: inline-block;
+      margin-top: 100px;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="center">Ye Olde Reading Club</h1>
+    <div class="left">
+      <form class="reading-club-form" action="#" method="post">
+        <legend>Ye Olde Reading Form</legend>
+        <br>
+        <label for="firstName">Enter your first name: </label>
+        <input type="text" name="firstName" placeholder="Enter your first name ..."><br><br>
+        <label for="lastName">Enter your last name: </label>
+        <input type="text" name="lastName" placeholder="Enter your last name ..."><br><br>
+        <label for="userEmail">Enter your email: </label>
+        <input type="email" name="userEmail" placeholder="Enter your email ..."><br><br>
+        <div class="reading-skills">
+          <h3 class="top-up">Do you know how to read?</h3>
+          <input type="radio" name="readLevel" id="iKnowHowToRead">
+          <label for="iKnowHowToRead">I Know How to Read</label><br><br>
+          <input type="radio" name="readLevel" id="iDontKnowHowToRead">
+          <label for="iDontKnowHowToRead">I Don't Know How to Read</label>
+          <p><em>If you don't know how to read, it's o.k., we'll teach you how!</em></p>
+        </div>
+        <input type="submit" name="submit" value="Submit this form, LIKE A BOSS" id="submit">
+      </form>
+    </div>
+    <div class="right">
+      <img src="images/ye-olde-books.jpg" alt="two old books in a pile">
+      <div class="testimonials">
+        <h2>Testimonials</h2>
+        <img src="https://unkertdevelopment.com/images/tim-unkert.jpg" alt="a picture of Tim Unkert" class="rounded">
+        <p>"I learned how to read from Ye Olde Reading Club!" - Mr. Unkert</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p class="center">Copyright &copy; 2023 Timothy Unkert. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>

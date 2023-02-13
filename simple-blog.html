@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple Blog</title>
+    <style>
+      body {
+        font-family: Georgia, sans-serif;
+        color: #333;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.1em;
+        line-height: 1.6;
+      }
+
+      .container {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+        max-width: 600px;
+      }
+
+      section {
+        display: inline-block;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+
+      .flex {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .flex-content-center {
+        display: flex;
+        align-items: center;
+      }
+
+      section img {
+        margin: 20px;
+      }
+
+      article footer p {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <main>
+        <article>
+          <header>
+            <h1>Title of Your Simple Blog</h1>
+            <section id="intro">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </section>
+          </header>
+          <section id="section-1">
+            <h2>Section 1 Title</h2>
+            <div class="flex">
+            <img src="images/image-1.jpg" alt="a picture of the mountains" width="150">
+              <div class="flex-content-center">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+          </section>
+          <section id="section-2">
+            <h2>Section 2 Title</h2>
+            <div class="flex">
+              <div class="flex-content-center">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <img src="images/image-2.jpg" alt="another picture of the mountains">
+            </div>
+          </section>
+          <footer>
+            <p>Copyright &copy; 2023 yourNameHere. All rights reserved.</p>
+          </footer>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
